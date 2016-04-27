@@ -1,6 +1,6 @@
 body {
   background-image: url('http://static.pexels.com/photos/9149/pexels-photo.jpeg');
-  background-size: cover;
+  background-size: auto 100%;
 }
 /*#filter {
 	width: 100%;
@@ -11,19 +11,32 @@ body {
 	opacity: 10%;
 	z-index: 999;
 }*/
+#swimBox1 {
+  position: relative;
+  height: 600px;
+  attachment: fixed;
+}
 .porpoise {
   z-index: 998;
   position: relative;
   display: inline;
 }
-#porpoiseBox1 {
+#porpoise1 {
   left: 75px;
   top: 150px;
+  width: 200px;
+  position: absolute;
 }
-#porpoiseBox2 {
+#porpoise2 {
   top: 50px;
+  left: 200px;
+  width: 250px;
+  position: absolute;
 }
-#porpoiseBox3 {
+#porpoise3 {
   top: 100px;
+  left: 300px;
+  height: 50px;
+  position: absolute;
 }
 /*# sourceMappingURL=seascape.1.0.0.css.map */
