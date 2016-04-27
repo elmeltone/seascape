@@ -11,7 +11,19 @@ body {
 	opacity: 10%;
 	z-index: 999;
 }*/
-#porpoise {
+.porpoise {
   z-index: 998;
+  position: relative;
+  display: inline;
+}
+#porpoiseBox1 {
+  left: 75px;
+  top: 150px;
+}
+#porpoiseBox2 {
+  top: 50px;
+}
+#porpoiseBox3 {
+  top: 100px;
 }
 /*# sourceMappingURL=seascape.1.0.0.css.map */
