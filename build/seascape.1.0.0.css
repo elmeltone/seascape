@@ -1,6 +1,12 @@
-body {
+#background {
   background-image: url('http://static.pexels.com/photos/9149/pexels-photo.jpeg');
-  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  bottom: -20%;
+  left: -10%;
+  right: -10%;
+  top: -20%;
+  position: absolute;
 }
 /*#filter {
 	width: 100%;
