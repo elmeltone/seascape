@@ -9932,7 +9932,7 @@
 			var pos_x = event.pageX,
 				pos_y = event.pageY,
 				left = 0,
-			right = 0;
+				right = 0;
 		
 			left = container_w / 2 - pos_x;
 			top = container_h / 2 - pos_y;
@@ -9958,6 +9958,28 @@
 					ease:Expo.easeOut,
 					overwrite:'all'
 				});
+			
+			TweenMax.to(
+				$layer_2,
+		    	1,
+		    	{
+		    		css: {
+		        		transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 10 + 'px)'
+		    		},
+		        	ease: Expo.easeOut,
+		        	overwrite: 'all'
+		      	});
+			
+			TweenMax.to(
+				$layer_1,
+		    	1,
+		    	{
+		    		css: {
+		        		transform: 'translateX(' + left / 4 + 'px) translateY(' + top / 2 + 'px)'
+		    		},
+		        	ease: Expo.easeOut,
+		        	overwrite: 'all'
+		      	});
 			
 			TweenMax.to(
 				$layer_0,
