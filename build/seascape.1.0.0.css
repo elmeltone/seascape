@@ -1,3 +1,23 @@
+html,
+body {
+  background-color: midnightblue;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+body {
+  padding: 50px 0;
+}
+.axis {
+  position: absolute;
+  z-index: 100;
+}
+.porpoise {
+  background-size: cover;
+  left: 10%;
+  position: absolute;
+  top: 15%;
+}
 #background {
   background-image: url('http://static.pexels.com/photos/9149/pexels-photo.jpeg');
   background-repeat: no-repeat;
@@ -8,41 +28,52 @@
   top: -20%;
   position: absolute;
 }
-/*#filter {
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: midnightblue;
-	opacity: 10%;
-	z-index: 999;
-}*/
-#swimBox1 {
-  position: relative;
-  height: 600px;
-  attachment: fixed;
+#x-axis {
+  bottom: -50%;
+  left: 50%;
+  top: -50%;
+  width: 1px;
 }
-.porpoise {
-  z-index: 998;
-  position: relative;
-  display: inline;
+#x-axis {
+  left: 0;
+  top: 50%;
+  right: 0;
+  height: 1px;
 }
-#porpoise1 {
-  left: 75px;
-  top: 150px;
-  width: 200px;
-  position: absolute;
+#porpoiseBox1 {
+  @include dimension(150px);
+  background-image: url('http://i.imgur.com/2luscja.png');
+  z-index: 20;
 }
+#porpoiseBox2 {
+  @include dimension(200px);
+  background-image: url('http://i.imgur.com/M8p0PBr.png');
+  z-index: 10;
+}
+#porpoiseBox3 {
+  @include dimension(100px);
+  background-image: url('http://i.imgur.com/2luscja.png');
+  z-index: 15;
+}
+/*#porpoise1 {
+	left: 75px;
+	top: 150px;
+	width: 200px;
+	position: absolute;
+	
+}
+
 #porpoise2 {
-  top: 50px;
-  left: 200px;
-  width: 250px;
-  position: absolute;
+	top: 50px;
+	left: 200px;
+	width: 250px;
+	position: absolute;
 }
+
 #porpoise3 {
-  top: 100px;
-  left: 300px;
-  height: 50px;
-  position: absolute;
-}
+	top: 100px;
+	left: 300px;
+	height: 50px;
+	position: absolute;
+}*/
 /*# sourceMappingURL=seascape.1.0.0.css.map */
