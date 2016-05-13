@@ -9927,16 +9927,16 @@
 		container_w = $container.width(),
 		container_h = $container.height();
 	
-	var addParallax = function() {
+	function addParallax() {
 		$(window).on('mousemove.parallax', function(event) {
 			var pos_x = event.pageX,
 				pos_y = event.pageY,
 				left = 0,
-				right = 0;
-		
+				top = 0;
+	
 			left = container_w / 2 - pos_x;
 			top = container_h / 2 - pos_y;
-		
+	
 			TweenMax.to(
 				$x_axis,
 				1,
@@ -9947,40 +9947,40 @@
 					ease:Expo.easeOut,
 					overwrite: 'all'
 				});
-		
+	
 			TweenMax.to(
 				$y_axis,
 				1,
 				{
 					css: {
-						transform: 'translateY' + (top * -1) + 'px)'
+						transform: 'translateY(' + (top * -1) + 'px)'
 					},
 					ease:Expo.easeOut,
 					overwrite:'all'
 				});
-			
+	
 			TweenMax.to(
 				$layer_2,
 		    	1,
 		    	{
 		    		css: {
-		        		transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 10 + 'px)'
+		        		transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px)'
 		    		},
 		        	ease: Expo.easeOut,
 		        	overwrite: 'all'
 		      	});
-			
+	
 			TweenMax.to(
 				$layer_1,
 		    	1,
 		    	{
 		    		css: {
-		        		transform: 'translateX(' + left / 4 + 'px) translateY(' + top / 2 + 'px)'
+		        		transform: 'translateX(' + left / 4 + 'px), translateY(' + top / 2 + 'px)'
 		    		},
 		        	ease: Expo.easeOut,
 		        	overwrite: 'all'
 		      	});
-			
+	
 			TweenMax.to(
 				$layer_0,
 		    	10,
@@ -9990,12 +9990,14 @@
 		    		},
 		        	ease: Expo.easeOut,
 		        	overwrite: 'none'
-		      	});
+		      	}
+		      )
 		});
 	};
 	
 	
 	module.exports = addParallax;
+
 
 /***/ }
 /******/ ]);
