@@ -9962,7 +9962,7 @@
 	
 			TweenMax.to(
 				$layer_2,
-		    	9,
+		    	12,
 		    	{
 		    		css: {
 		        		transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px)'
@@ -9973,7 +9973,7 @@
 	
 			TweenMax.to(
 				$layer_1,
-		    	6,
+		    	9,
 		    	{
 		    		css: {
 		        		transform: 'translateX(' + left / 4 + 'px), translateY(' + top / 2 + 'px)'
@@ -9984,7 +9984,7 @@
 	
 			TweenMax.to(
 				$layer_3,
-		    	5,
+		    	15,
 		    	{
 		    		css: {
 		        		transform: 'translateX(' + left / 40 + 'px), translateY(' + top / 2 + 'px)'
