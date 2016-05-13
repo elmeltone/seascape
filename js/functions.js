@@ -2,6 +2,7 @@ var $ = require('jquery'),
 	$layer_0 = $('.layer-0'),
 	$layer_1 = $('.layer-1'),
 	$layer_2 = $('.layer-2'),
+	$layer_3 = $('.layer-3'),
 	$x_axis  = $('#x-axis'),
 	$y_axis  = $('#y-axis'),
 	$container = $('body'),
@@ -42,7 +43,7 @@ function addParallax() {
 
 		TweenMax.to(
 			$layer_2,
-	    	1,
+	    	9,
 	    	{
 	    		css: {
 	        		transform: 'translateX(' + left / 12 + 'px) translateY(' + top / 6 + 'px)'
@@ -53,10 +54,21 @@ function addParallax() {
 
 		TweenMax.to(
 			$layer_1,
-	    	1,
+	    	6,
 	    	{
 	    		css: {
 	        		transform: 'translateX(' + left / 4 + 'px), translateY(' + top / 2 + 'px)'
+	    		},
+	        	ease: Expo.easeOut,
+	        	overwrite: 'all'
+	      	});
+
+		TweenMax.to(
+			$layer_3,
+	    	5,
+	    	{
+	    		css: {
+	        		transform: 'translateX(' + left / 40 + 'px), translateY(' + top / 2 + 'px)'
 	    		},
 	        	ease: Expo.easeOut,
 	        	overwrite: 'all'
